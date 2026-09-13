@@ -15,4 +15,4 @@ else:
     consumo = 'alto'
 
 print(f'Tensión (V): {tension_v}\nCorriente (A): {corriente_a}\nHoras de funcionamiento (h): {tiempo_h}\nPrecio de la electricidad (€/kWh): {precio_ekwh}')
-print(f'Potencia: {potencia} W\nEnergía: {energia} kWh\nCoste: {coste} €\nConsumo: {consumo}')
+print(f'Potencia: {potencia:.2f} W\nEnergía: {energia:.2f} kWh\nCoste: {coste:.2f} €\nConsumo: {consumo}')

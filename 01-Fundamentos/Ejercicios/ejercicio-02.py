@@ -2,21 +2,22 @@ n_mediciones = int(input('Introduce el número de mediciones: '))
 print('Ahora introduce el valor de las mediciones')
 
 
-
+suma_medicion = 0
 for n in range(n_mediciones):
-    if n == 0: # si estamos en la primera medicion/valor
-        medicion = float(input(f'Introduce el valor de la medicion {n+1}: '))
+    medicion = float(input(f'Introduce el valor de la medicion {n + 1}: '))
+
+    if n == 0: # si estamos en la primera medicion/valor, inicializamos variables
         minimo = medicion
         maximo = medicion
-        suma_medicion = medicion
+
     else:
-        medicion = float(input(f'Introduce el valor de la medicion {n+1}: '))
 
         if medicion > maximo:
             maximo = medicion
         if medicion < minimo:
             minimo = medicion
-        suma_medicion += medicion
+
+    suma_medicion += medicion
 
 media = suma_medicion / n_mediciones
 

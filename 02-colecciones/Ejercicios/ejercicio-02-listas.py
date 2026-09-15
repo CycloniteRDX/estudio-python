@@ -9,15 +9,15 @@ for i in range(n_numeros):
     numero = float(input(f'Introduce el número {i+1}: '))
     lista_numeros.append(numero)
 
-for index,valor in enumerate(lista_numeros):
-    if index == 0:
+mayor = lista_numeros[0]
+menor = lista_numeros[0]
+
+for valor in lista_numeros:
+
+    if valor > mayor:
         mayor = valor
+    if valor < menor:
         menor = valor
-    else:
-        if valor > mayor:
-            mayor = valor
-        if valor < menor:
-            menor = valor
 
     suma += valor
     if valor > 0:

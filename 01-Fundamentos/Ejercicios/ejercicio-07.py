@@ -8,8 +8,8 @@ while numero_introducido != 0:
     suma_numeros += numero_introducido
     numero_introducido = int(input("Introduce un numero: "))
 
-
-media_numeros = (suma_numeros / n_numeros)
+if n_numeros > 0:
+    media_numeros = (suma_numeros / n_numeros)
 print(f'Suma total: {suma_numeros}')
 print(f'Cantidad de números: {n_numeros}')
 print(f'Media: {media_numeros}')

@@ -1,4 +1,4 @@
-# Ejercicio 09 — Lista de temperaturas
+# Ejercicio 01 — Lista de temperaturas
 
 Crea un programa que permita introducir varias temperaturas y almacenarlas en una lista.
 

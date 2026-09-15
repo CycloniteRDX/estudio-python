@@ -1,35 +1,29 @@
 n_numeros = int(input('Introduce la cantidad de números: '))
 
+suma_total = 0
+positivo = 0
+negativo = 0
+ceros = 0
+
 for index in range(n_numeros):
     numero = int(input(f'Introduce el numero {index+1}: '))
     if index == 0:
-        suma_total = numero
         mayor = numero
         menor = numero
-        if numero > 0:
-            positivo = 1
-            negativo = 0
-            ceros = 0
-        if numero < 0:
-            negativo = 1
-            positivo = 0
-            ceros = 0
-        if numero == 0:
-            ceros = 1
-            positivo = 0
-            negativo = 0
+
     else:
-        suma_total += numero
         if numero > mayor:
             mayor = numero
-        if numero < menor:
+        elif numero < menor:
             menor = numero
-        if numero > 0:
-            positivo += 1
-        if numero < 0:
-            negativo += 1
-        if numero == 0:
-            ceros += 1
+
+    suma_total += numero
+    if numero > 0:
+        positivo += 1
+    elif numero < 0:
+        negativo += 1
+    else:
+        ceros += 1
 
 media = suma_total / n_numeros
 

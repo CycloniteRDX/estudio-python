@@ -7,7 +7,7 @@ menu = ("1. Sumar dos números\n"
 opcion = 0
 while opcion != 4:
     opcion = int(input(menu))
-    if opcion == 1 or opcion == 2 or opcion == 3:
+    if 1 <= opcion <= 3:
         numero1 = int(input('Introduce el número 1: '))
         numero2 = int(input('Introduce el número 2: '))
         if opcion == 1:
@@ -16,7 +16,5 @@ while opcion != 4:
             print(f'Resultado: {numero1 - numero2}')
         else:
             print(f'Resultado: {numero1 * numero2}')
-    elif opcion == 4:
-        pass
-    else:
+    elif opcion != 4:
         print('Opcion invalida')
